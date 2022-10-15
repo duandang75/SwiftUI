@@ -14,8 +14,10 @@ struct RecipeListFeaturedView: View {
     var body: some View {
         VStack(alignment: .leading) {
             Text("Featured Recipes")
-                .font(.title)
+                .bold()
                 .padding(.leading)
+                .padding(.top,40)
+                .font(.largeTitle)
             GeometryReader { geo in
                 TabView {
                     
